@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "OCSESSID",
+      "value": "5e5af2b4c6e226c0853aafb719",
+      "domain": "naveenautomationlabs.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "language",
+      "value": "en-gb",
+      "domain": ".naveenautomationlabs.com",
+      "path": "/",
+      "expires": 1790159753.466753,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "domain": ".naveenautomationlabs.com",
+      "path": "/",
+      "expires": 1790159753.466892,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
