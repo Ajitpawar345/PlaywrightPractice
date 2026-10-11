@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "codegen": "npx playwright codegen https://naveenautomationlabs.com/opencart/index.php?route=account/register"
+  },
   "keywords": [],
   "author": "Ajit",
   "license": "ISC",
