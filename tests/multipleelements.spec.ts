@@ -1,5 +1,4 @@
 import {Locator, Page, test} from '@playwright/test';
-import { link } from 'fs';
 
 test('get all the link test', async({page})=>{
 
