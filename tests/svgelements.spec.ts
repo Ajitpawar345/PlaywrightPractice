@@ -39,7 +39,7 @@ test('SVG element test', async({page})=> {
 
 });
 
-test('SVG Graph element test', async({page})=> {
+test('SVG Graph element with mouse hover test', async({page})=> {
 
     await page.goto('https://petdiseasealerts.org/forecast-map/#/');
 
