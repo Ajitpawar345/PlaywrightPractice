@@ -36,6 +36,7 @@ export default defineConfig({
     screenshot:'on-first-failure',
     video: 'on',
     //testIdAttribute: 'data-test-id'
+    permissions: []
   },
 
   /* Configure projects for major browsers */
