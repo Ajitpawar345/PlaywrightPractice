@@ -22,7 +22,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  timeout: 50000,
+  timeout: 30000,//for a single test execution
+ // expect:  {timeout:10000},
   reporter: [
     ['html'],
     ['list']
@@ -31,12 +32,22 @@ export default defineConfig({
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    actionTimeout: 10000,
+    navigationTimeout: 15000,
+
+
     trace: 'retain-on-failure',
     headless: false,
     screenshot:'on-first-failure',
     video: 'on',
     //testIdAttribute: 'data-test-id'
-    permissions: []
+    permissions: [],
+    // viewport:{
+    //   height: 750,
+    //   width: 800
+    // },
+    viewport: null,
+    
   },
 
   /* Configure projects for major browsers */

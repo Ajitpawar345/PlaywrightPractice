@@ -12,7 +12,7 @@ test('google search test', async({page})=> {
 
     await page.pause();
 
-})
+});
 
 test('amazon search test', async({page})=> {
 
