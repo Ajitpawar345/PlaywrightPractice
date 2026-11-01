@@ -17,10 +17,14 @@ export default defineConfig({
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  
+  retries: 0,
+ 
+
+  //workers: process.env.CI ? 1 : undefined,
+  //workers: '50%',
+  workers: '50%',
+
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   timeout: 30000,//for a single test execution
  // expect:  {timeout:10000},
@@ -52,20 +56,20 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    // },
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
     // {
     //   name: 'edge',
     //   use: { ...devices['Desktop Chrome'] },
     // },
 
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
     // {
     //   name: 'webkit',
